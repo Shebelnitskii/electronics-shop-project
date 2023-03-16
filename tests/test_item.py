@@ -31,6 +31,12 @@ def test_setter_name(item):
     item.name = "Клавиатура"
     assert item.name == "Клавиатура"
 
+def test_repr(item):
+    assert repr(item) == "Item('Мышь', 1500, 1)"
+
+def test_str(item):
+    assert str(item) == 'Мышь'
+
 
 
 
