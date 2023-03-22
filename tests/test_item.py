@@ -7,6 +7,10 @@ from src.item import Item
 def item():
     return Item('Мышь',1500,1)
 
+@pytest.fixture()
+def item1():
+    return Item('Клавиатура',2000,5)
+
 def test_calculate_total_price(item):
     assert item.calculate_total_price() == 1500
 
@@ -36,6 +40,9 @@ def test_repr(item):
 
 def test_str(item):
     assert str(item) == 'Мышь'
+
+def test_add(item,item1):
+    assert item + item1 == 6
 
 
 
