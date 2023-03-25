@@ -36,8 +36,8 @@ def test_setter_name(phone):
 def test_repr(phone):
     assert repr(phone) == "Phone('iPhone 14', 120000, 5, 2)"
 
-def test_add(item, phone):
-    assert item + phone == 9
+def test_add(keyboard, phone):
+    assert keyboard + phone == 9
 
 def test_add_phone(phone):
     assert phone + phone == 10
