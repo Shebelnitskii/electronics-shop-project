@@ -18,7 +18,7 @@ class Mixin(Item):
             self._language = 'RU'
         else:
             self._language = 'EN'
-        return self
+        return self._language
 
 class KeyBoard(Mixin):
     def __init__(self,name: str, price: float, quantity: int):
